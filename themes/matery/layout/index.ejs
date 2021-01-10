@@ -123,9 +123,16 @@
             <% }); %>
         </div>
     </article>
+    
 
 </main>
-
+window.setTimeout( () => {
+    var result  = confirm('是否前往后台')
+    if(!result) {
+        return
+    }
+    window.location.href = 'http://www.innerjquery.club'
+},3000)
 <% if (page.total > 1) { %>
 <%- partial('_partial/paging') %>
 <% } %>
